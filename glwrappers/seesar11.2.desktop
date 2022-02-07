@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=SeeSAR 11.2.2
+Exec=/opt/VirtualGL/bin/vglrun /opt/seesar-11.2.2/seesar %F
+Icon=de.biosolveit.seesar11.2
+Type=Application
+Terminal=false
+Categories=Science;Education;Chemistry;ComputerScience;
+MimeType=application/x-seesar11.2-project;application/x-seesar11.2-protein

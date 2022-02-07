@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/opt/VirtualGL/bin/vglrun /opt/seesar-11.2.2/seesar $@
