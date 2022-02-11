@@ -15,7 +15,7 @@ To be able to run GL-enabled applications over X2go without breaking `apt autore
 
 ## How to create the template
 
-10. Start by making a lab from the Canonical Ubuntu Server 18.04 image. Choose a VM size that has GPU visualisation and say "yes" to the NVidia drivers being installed.  Make note of the username you chose as you will reuse it later.
+1. Start by making a lab from the Canonical Ubuntu Server 18.04 image. Choose a VM size that has GPU visualisation and say "yes" to the NVidia drivers being installed.  Make note of the username you chose as you will reuse it later.
 20. Start the template and login over SSH, then `sudo -i` to get root.
 30. `git clone` this repo to /root and `cd` into the repo directory.
 40. Run `bash lazy1.sh` and answer any questions that appear.
@@ -24,7 +24,7 @@ To be able to run GL-enabled applications over X2go without breaking `apt autore
 
 ## How to use GL applications
 
-10. Launch a terminal emulator in your X2go session.
+1. Launch a terminal emulator in your X2go session.
 20. Prepend `vglrun` to the command that launches your application, e.g. `vglrun glxgears` instead of `glxgears`.  **If you omit `vglrun`, your whole X session will terminate instantly** leaving a core dump file in your home folder.
 
 Consider using wrapper scripts and modifying menu items to make your students less likely to crash their sessions.  I enclose examples in the *glwrappers* directory.

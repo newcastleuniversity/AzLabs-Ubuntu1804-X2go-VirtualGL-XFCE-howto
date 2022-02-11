@@ -6,7 +6,7 @@ The examples given are from an Azure Lab configured to teach computational chemi
 
 ## SeeSAR out-of-the-box
 
-Running `vglrun seesar` in a terminal emulator gives me the SeeSAR GUI, but if I run `seesar`, my X2go session crashes. SeeSAR also made a desktop menu item targetting */opt/seesar-11.2.2/seesar*. Double-clicking that item crashed my X2go session.
+Running `vglrun seesar` in a terminal emulator gives me the SeeSAR GUI, but if I run `seesar`, my X2go session crashes. SeeSAR's installer also made a desktop menu item targetting */opt/seesar-11.2.2/seesar*. Double-clicking that item crashed my X2go session.
 
 SeeSAR installs itself into */opt/seesar-11.2.2*.  Note that this directory is not in the student's $PATH.
 
@@ -33,4 +33,4 @@ Example file: seesar11.2.desktop
 
 ## Why not just move `seesar` to `seesar.real`?
 
-If I had renamed */opt/seesar-11.2.2/seesar* to */opt/seesar-11.2.2/seesar.real* and put the wrapper script at */opt/seesar-11.2.2/seesar*, I'd have a *$@* in the command */opt/seesar-11.2.2/seesar* used by the menu item.  The menu item already has a *%F* mechanism for dealing with file arguments and I don't know whether the two would conflict.  Remediating that conflict would altering the menu item to say "Exec=/opt/VirtualGL/bin/vglrun /opt/seesar-11.2.2/seesar.real %F", so it doesn't save me any work.
+If I had renamed */opt/seesar-11.2.2/seesar* to */opt/seesar-11.2.2/seesar.real* and put the wrapper script at */opt/seesar-11.2.2/seesar*, I'd have a *$@* in the command */opt/seesar-11.2.2/seesar* used by the menu item.  The menu item already has a *%F* mechanism for dealing with file arguments and I don't know whether the two would conflict.  Remediating that possible conflict would mean altering the menu item to say "Exec=/opt/VirtualGL/bin/vglrun /opt/seesar-11.2.2/seesar.real %F", so it doesn't save me any work.
